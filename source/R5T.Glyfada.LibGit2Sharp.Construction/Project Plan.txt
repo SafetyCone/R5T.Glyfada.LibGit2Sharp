@@ -1,0 +1,4 @@
+R5T.Glyfada.LibGit2Sharp.Construction - A construction console-app for the library R5T.Glyfada.LibGit2Sharp.
+
+Goals
+
