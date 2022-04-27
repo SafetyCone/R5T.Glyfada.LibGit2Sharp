@@ -1,9 +1,9 @@
-﻿using System;
+using System;using R5T.T0064;
 
 
 namespace R5T.Glyfada.LibGit2Sharp
-{
-    public class GitOperator : IGitOperator
+{[ServiceImplementationMarker]
+    public class GitOperator : IGitOperator,IServiceImplementation
     {
         public void Add(string path)
         {
