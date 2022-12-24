@@ -1,0 +1,5 @@
+C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Glyfada.LibGit2Sharp\source\R5T.Glyfada.LibGit2Sharp.Construction\obj\Release\netcoreapp2.2\R5T.Glyfada.LibGit2Sharp.Construction.csproj.AssemblyReference.cache
+C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Glyfada.LibGit2Sharp\source\R5T.Glyfada.LibGit2Sharp.Construction\obj\Release\netcoreapp2.2\R5T.Glyfada.LibGit2Sharp.Construction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Glyfada.LibGit2Sharp\source\R5T.Glyfada.LibGit2Sharp.Construction\obj\Release\netcoreapp2.2\R5T.Glyfada.LibGit2Sharp.Construction.AssemblyInfoInputs.cache
+C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Glyfada.LibGit2Sharp\source\R5T.Glyfada.LibGit2Sharp.Construction\obj\Release\netcoreapp2.2\R5T.Glyfada.LibGit2Sharp.Construction.AssemblyInfo.cs
+C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Glyfada.LibGit2Sharp\source\R5T.Glyfada.LibGit2Sharp.Construction\obj\Release\netcoreapp2.2\R5T.Glyfada.LibGit2Sharp.Construction.csproj.CoreCompileInputs.cache

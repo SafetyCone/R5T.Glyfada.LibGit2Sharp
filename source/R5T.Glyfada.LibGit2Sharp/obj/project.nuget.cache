@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "8t2oWYot0UkGPX53lok2C7MT6LVVx23yw/QCyTrdMs6JHUbLMgTCB/5in/mKpkuuQG7ANUoMKAls419o7laYzw==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\DEV\\Git\\GitHub\\SafetyCone\\R5T.Glyfada.LibGit2Sharp\\source\\R5T.Glyfada.LibGit2Sharp\\R5T.Glyfada.LibGit2Sharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\libgit2sharp\\0.26.2\\libgit2sharp.0.26.2.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.306\\libgit2sharp.nativebinaries.2.0.306.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
