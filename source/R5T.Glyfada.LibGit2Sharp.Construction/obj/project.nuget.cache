@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GAsu/VDsuXXeKYrpfnXzms4kqNJx2AKsUj7WcDp36gIOnyTm7ikoG1Q72dlIXRise3EdJvRXvedhyQQKro3gfw==",
+  "dgSpecHash": "J6EfzC9BSyTF7tg36zGt/CqLCHJRj5xK3zKaNRbshbuAT4YRb29IS3PofJBCJMWpYZoRksM++NzjldkYYnMpjQ==",
   "success": true,
   "projectFilePath": "C:\\Code\\DEV\\Git\\GitHub\\SafetyCone\\R5T.Glyfada.LibGit2Sharp\\source\\R5T.Glyfada.LibGit2Sharp.Construction\\R5T.Glyfada.LibGit2Sharp.Construction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\libgit2sharp\\0.26.2\\libgit2sharp.0.26.2.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.306\\libgit2sharp.nativebinaries.2.0.306.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
