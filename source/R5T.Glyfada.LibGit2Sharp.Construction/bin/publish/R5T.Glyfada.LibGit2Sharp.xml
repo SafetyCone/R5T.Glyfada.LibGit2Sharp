@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R5T.Glyfada.LibGit2Sharp</name>
+    </assembly>
+    <members>
+        <member name="M:R5T.Glyfada.LibGit2Sharp.IServiceCollectionExtensions.AddGitOperator(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the <see cref="T:R5T.Glyfada.LibGit2Sharp.GitOperator"/> implementation of <see cref="T:R5T.Glyfada.IGitOperator"/> as a <see cref="F:Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Glyfada.LibGit2Sharp.IServiceCollectionExtensions.AddGitOperatorAction(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the <see cref="T:R5T.Glyfada.LibGit2Sharp.GitOperator"/> implementation of <see cref="T:R5T.Glyfada.IGitOperator"/> as a <see cref="F:Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

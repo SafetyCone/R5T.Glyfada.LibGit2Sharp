@@ -2,7 +2,8 @@ using System;using R5T.T0064;
 
 
 namespace R5T.Glyfada.LibGit2Sharp
-{[ServiceImplementationMarker]
+{
+    [ServiceImplementationMarker]
     public class GitOperator : IGitOperator,IServiceImplementation
     {
         public void Add(string path)
@@ -16,6 +17,11 @@ namespace R5T.Glyfada.LibGit2Sharp
         }
 
         public void Commit(string path, string message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Fetch(string path)
         {
             throw new NotImplementedException();
         }

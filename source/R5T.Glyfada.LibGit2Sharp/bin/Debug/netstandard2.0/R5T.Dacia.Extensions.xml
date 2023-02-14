@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R5T.Dacia.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:R5T.Dacia.IServiceCollectionExtensions.AddSingletonForward``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,R5T.Dacia.IServiceAction{``1})">
+            <summary>
+            Requests for <typeparamref name="TService"/> are satisfied by providing an instance of <typeparamref name="TDerivedService"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.IServiceCollectionExtensions.AddSingletonForwardAction``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,R5T.Dacia.IServiceAction{``1})">
+            <summary>
+            Requests for <typeparamref name="TService"/> are satisfied by providing an instance of <typeparamref name="TDerivedService"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.IServiceCollectionExtensions.Run``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,R5T.Dacia.IServiceAction{``0})">
+            <summary>
+            Quality-of-life overload for <see cref="M:R5T.Dacia.IServiceCollectionExtensions.RunServiceAction``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,R5T.Dacia.IServiceAction{``0})"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.IServiceCollectionExtensions.Rerun``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,R5T.Dacia.IServiceAction{``0})">
+            <summary>
+            Reruns an <see cref="T:R5T.Dacia.IServiceAction`1"/>.
+            Service actions are designed to only run once. This method allows re-running a service action.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.Extensions.IServiceCollectionExtensions.AddMultipleServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>
+            Allows separation of code-block for adding multiple services.
+            Does not do anything special, just serves to separate code for adding the services for a multiple service.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.Extensions.IServiceCollectionExtensions.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>
+            Allows fluent separation of a code-block for adding services.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.Extensions.IServiceCollectionExtensions.AddSingletonAsTypeIfInstanceNull``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1)">
+            <summary>
+            Adds the <typeparamref name="TImplementation"/> instance as a singleton instance (if not null), else adds the <typeparamref name="TImplementation"/> as a service type implementation.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.Extensions.IServiceCollectionExtensions.AddSingletonMultipleService``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds services for a multiple service in a way that allows getting services via <see cref="M:R5T.Dacia.Extensions.IServiceProviderExtensions.GetMultipleService``1(System.IServiceProvider)"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.Extensions.IServiceProviderExtensions.GetMultipleService``1(System.IServiceProvider)">
+            <summary>
+            Gets multiple services added using <see cref="M:R5T.Dacia.Extensions.IServiceCollectionExtensions.AddSingletonMultipleService``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)"/>.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelperExtensions.GetEmptyServiceProvider(R5T.Dacia.ServiceProviderHelper)">
+            <summary>
+            Gets an empty service provider.
+            Useful for when a configuration service provider is required, but configuration of the configuration requires no services.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelperExtensions.GetInstanceOfType``1(R5T.Dacia.ServiceProviderHelper,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},``0@)">
+            <summary>
+            Output the service provider so it can be used in a using statement, thus use an out parameter for the instance.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelperExtensions.GetInstanceOfType``1(R5T.Dacia.ServiceProviderHelper,``0@)">
+            <summary>
+            Output the service provider so it can be used in a using statement, thus use an out parameter for the instance.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelperExtensions.GetInstanceOfType``1(R5T.Dacia.ServiceProviderHelper)">
+            <summary>
+            Get an instance using a service provider as the constructor.
+            Warning: The instance is allowed to escape the service provider that constructed it, which gets disposed, thus any disposable services the instance relies on will also be in a disposed state.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceCollectionHelper.DoNothing(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            A method that performs no action on an <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> instance.
+            Useful for when a null-operation is required in creating a service provider.
+            </summary>
+        </member>
+        <member name="T:R5T.Dacia.ServiceProviderHelper">
+            <summary>
+            
+            </summary>
+            <remarks>
+            The <see cref="T:R5T.Dacia.ServiceProviderHelper"/> class is instantiable to allow it to have extension methods in client libraries.
+            </remarks>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelper.New">
+            <summary>
+            Allows syntactic-sugar of starting a code line with <see cref="T:R5T.Dacia.ServiceProviderHelper"/>...
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.ServiceProviderHelper.GetInstanceOfType``1">
+            <summary>
+            Get an instance using a service provider as the constructor.
+            Warning: The instance is allowed to escape the service provider that constructed it, which gets disposed, thus any disposable services the instance relies on will also be in a disposed state.
+            </summary>
+        </member>
+        <member name="T:R5T.Dacia.IServiceIndirect`1">
+            <summary>
+            Allows creating indirection for a service.
+            For example, if an IService implementation wants to depend on IService itself, the AddX() method can look for all IService entries in the service collection and replace them with an IServiceIndirect{IService}.
+            Then depend on an IServiceIndirect{IService} instead of IService.
+            Any IService consumers are then left unaware.
+            </summary>
+        </member>
+        <member name="T:R5T.Dacia.Internals.IMultipleServiceHolder`1">
+            <summary>
+            A interface for a holder service that helps with multiple services.
+            </summary>
+        </member>
+        <member name="M:R5T.Dacia.IServiceActionExtensions.Again``1(R5T.Dacia.IServiceAction{``0})">
+            <summary>
+            Allow running a service action more than once by creating a new service action.
+            </summary>
+        </member>
+        <member name="T:R5T.Dacia.IForwardedServiceAction`2">
+            <summary>
+            Encapsulates allowing a service <typeparamref name="TForwardedService"/> to be used as a <typeparamref name="TService"/> from a <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            Useful in allowing a more specific service (like ILocalFileSystemOperator) to be used a more general service (IFileSystemOperator) by forwarding the IFileSystemOperator as an ILocalFileSystemOperator.
+            </summary>
+            <typeparam name="TService">The desired service.</typeparam>
+            <typeparam name="TForwardedService">The service that is forwarded as an instance of the desired service.</typeparam>
+        </member>
+        <member name="T:R5T.Dacia.IServiceAction`1">
+            <summary>
+            Encapsulates the addition of a service <typeparamref name="TService"/> to a <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> instance.
+            Can be run to actually add the service.
+            Useful in communicating intent while configuring the DI container.
+            </summary>
+            <typeparam name="TService">The service definition type. The type parameter is a dummy, allowing the service action to communicate what service type of the action.</typeparam>
+            <remarks>
+            NO covariance or contravariance! This is because the Microsoft DI-continer is not covariant or contravariant.
+            </remarks>
+        </member>
+        <member name="T:R5T.Dacia.MulitpleRunServiceAction`1">
+            <summary>
+            An <see cref="T:R5T.Dacia.IServiceAction`1"/> implementation that runs its action any number of times.
+            </summary>
+        </member>
+        <member name="T:R5T.Dacia.ServiceAction`1">
+            <summary>
+            Basic <see cref="T:R5T.Dacia.IServiceAction`1"/> implementation that runs only ONCE.
+            Note: not thread-safe.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions.BuildIntermediateServiceProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Builds a <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/>, but allows marking that service provider as intermediate.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions.DoNothing(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            A method that performs no action on an <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> instance.
+            Useful for when a null-operation is required in creating a service provider.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions.GetIntermediateRequiredService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,``0@)">
+            <summary>
+            Builds a <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/> to get a <typeparamref name="TService"/> instance from a partially-configured <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            Returns the <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/> instance to allow caller to control its <see cref="T:System.IDisposable"/> lifetime.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IServiceCollectionExtensions.GetIntermediateRequiredService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Builds a <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/> to get a <typeparamref name="TService"/> instance from a partially-configured <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            Note: Because <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/> is <see cref="T:System.IDisposable"/>, the service provider instance used to create the <typeparamref name="TService"/> instance is disposed, meaning the service instance escapes its service provider context.
+            This can cause problems when the service, or any of its dependency services, are <see cref="T:System.IDisposable"/> since the <see cref="T:Microsoft.Extensions.DependencyInjection.ServiceProvider"/> manages those disposable lifetimes.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,9 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 
 using global::LibGit2Sharp;
-
-using R5T.Magyar.IO;
 
 
 namespace R5T.Glyfada.LibGit2Sharp.Construction
@@ -48,26 +47,26 @@ namespace R5T.Glyfada.LibGit2Sharp.Construction
 
                 var repositoryStatus = repository.RetrieveStatus();
                 
-                repository.analyze
+                //repository.analyze
 
 
-                var mergeOptions = new MergeOptions
-                {
-                    FastForwardStrategy = FastForwardStrategy.
-                }
+                //var mergeOptions = new MergeOptions
+                //{
+                //    FastForwardStrategy = FastForwardStrategy.
+                //}
 
-                var mergeResult = repository.Merge(,);
+                //var mergeResult = repository.Merge(,);
 
                 var commit = repository.Commits.First();
                 
-                var fetchResult = repository.
+                //var fetchResult = repository.
 
-                var repositoryStatus = repository.RetrieveStatus();
+                //var repositoryStatus = repository.RetrieveStatus();
 
 
-                global::LibGit2Sharp.Handlers.
+                //global::LibGit2Sharp.Handlers.
 
-                Commands.Fetch()
+                //Commands.Fetch()
             }
         }
 

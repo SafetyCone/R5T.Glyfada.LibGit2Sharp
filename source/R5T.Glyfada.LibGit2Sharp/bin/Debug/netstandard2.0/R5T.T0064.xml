@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R5T.T0064</name>
+    </assembly>
+    <members>
+        <member name="T:R5T.T0064.DraftServiceDefinitionMarkerAttribute">
+            <summary>
+            Marks an interface as being a draft service definition.
+            Drafting allows service definitions to be quickly created when needed, then reviewed and moved to a permanent location at a later time.
+            This attribute is useful in surveying draft service definitions to create a kind of TODO list of service definitions that should be reviewed.
+            Also allows specifying that an interface is *not* a service definition. (Useful for decorating extraneous intefaces in files that happen to be in the canonical draft service definition files location.)
+            Not inherited.
+            </summary>
+        </member>
+        <member name="T:R5T.T0064.DraftServiceImplementationMarkerAttribute">
+            <summary>
+            Marks a class as being a draft service implementation.
+            Drafting allows service implementations to be quickly created when needed, then reviewed and moved to a permanent location at a later time.
+            This attribute is useful in surveying draft service implementations to create a kind of TODO list of service implementations that should be reviewed.
+            Also allows marking a class as *not* being a service implementation. (Useful for decorating extraneous classes in files that happen to be in the canonical service implementation code files location.)
+            Not inherited.
+            </summary>
+        </member>
+        <member name="T:R5T.T0064.ServiceDefinitionMarkerAttribute">
+            <summary>
+            Marks an interface as being a service definition. Not inherited.
+            Also allows specifying that an interface is *not* a service definition. (Useful for decorating extraneous types that also happen to be in a service definition file.)
+            </summary>
+        </member>
+        <member name="T:R5T.T0064.ServiceImplementationMarkerAttribute">
+            <summary>
+            Marks a class as being a service implementation (in cases where the service implemenation is in a code file outside the usual service implementations directory).
+            Also allows marking a class as *not* being a service implementation. (Useful for decorating extraneous classes that happen to be in a service implementation code file.
+            </summary>
+        </member>
+        <member name="T:R5T.T0064.Documentation">
+            <summary>
+            IServiceDefinition, IServiceImplementation, and IServiceComponent marker interfaces and accompanying attributes for identifying service component types.
+            </summary>
+        </member>
+        <member name="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers">
+            <summary>
+            Marker interface names (like "IServiceDefinition") do not contain the word "Marker". The name "IServiceDefinition" was chosen over "IServiceDefinitionMarker" because all the types implementing this marker interface *are* service definitions, not service definition markers.
+            It will make more sense to have an extension method to a service definition, instead of a service definition marker.
+            Marker attributes however, are called "{X}MarkerAttribute" because they are indeed marker attributes.
+            </summary>
+        </member>
+        <member name="T:R5T.T0064.IDraftServiceDefinition">
+            <summary>
+            Empty marker interface that can be implemented by a type to communicate that that type is a draft service definition.
+            </summary>
+            <remarks>
+            <inheritdoc cref="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers" path="/summary"/>
+            </remarks>
+        </member>
+        <member name="T:R5T.T0064.IDraftServiceImplementation">
+            <summary>
+            Empty marker interface that can be implemented by a type to communicate that that type is a draft service implementation.
+            </summary>
+            <remarks>
+            <inheritdoc cref="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers" path="/summary"/>
+            </remarks>
+        </member>
+        <member name="T:R5T.T0064.IServiceComponent">
+            <summary>
+            Empty marker interface to communicate that the implementing type is a service component.
+            This interface should not be used directly. Instead, service definitions should implement <see cref="T:R5T.T0064.IServiceDefinition"/>, and service implementations should implement <see cref="T:R5T.T0064.IServiceImplementation"/>.
+            </summary>
+            <remarks>
+            <inheritdoc cref="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers" path="/summary"/>
+            </remarks>
+        </member>
+        <member name="T:R5T.T0064.IServiceDefinition">
+            <summary>
+            Empty marker interface that can be implemented by a type to communicate that that type is a service definition.
+            </summary>
+            <remarks>
+            <inheritdoc cref="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers" path="/summary"/>
+            </remarks>
+        </member>
+        <member name="T:R5T.T0064.IServiceImplementation">
+            <summary>
+            Empty marker interface that can be implemented by a type to communicate that that type is a service implementation.
+            </summary>
+            <remarks>
+            <inheritdoc cref="F:R5T.T0064.Documentation.InterfaceNamesAreNotMarkers" path="/summary"/>
+            </remarks>
+        </member>
+    </members>
+</doc>
